@@ -1,0 +1,216 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            background-color: #f1f1f1;
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #c1c1c1;
+            border-radius: 10px;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap');
+
+        html>body {
+            line-height: normal;
+            font-family: 'Lato', sans-serif;
+            margin-left: 12%;
+            margin-right: 12%;
+        }
+
+        #content {
+            clear: both;
+            padding: 15px;
+            min-height: 395px;
+        }
+
+        #global {
+            float: right;
+            padding: 5px 0px;
+        }
+    </style>
+    <title>Introduction To VEX Programming</title>
+    <style>
+        h3 {
+            margin-top: 25px !important;
+        }
+
+        h1 {
+            color: #4f4f4f;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #4f4f4f;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #4f4f4f;
+            font-weight: 600;
+        }
+
+        b {
+            font-weight: bolder;
+            /* darker grey color */
+            color: #4f4f4f;
+
+        }
+
+        p {
+            font-size: 1em;
+
+            line-height: 1em;
+            color: #5F5F5F;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #B00020;
+            text-decoration: underline dotted;
+        }
+
+        a:hover {
+            color: #B00020;
+            text-decoration: underline;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #E5E5E5;
+            color: #5F5F5F;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        th {
+            background-color: #e8e8e8;
+            color: #5F5F5F;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        li {
+            list-style: none;
+            color: #5F5F5F;
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="margin-top: 40px;"></div>
+    <div><img src="static/Hopkinetics.png" height="75" width=auto>
+        <p>&nbsp;</p>
+        <div id="global">
+        </div>
+        <div id="content">
+            <ul>
+                <li style="float:right">By Joey Marcinowski</li>
+            </ul>
+            <h1>Introduction To VEX Programming</h1>
+            <p>
+                Robotics programming can be daunting to new members, but it does not need to be.</p>
+            <p><b>This website is intended to be used as a guide and not a source of software. When you get a
+                    idea, try it!</b></p>
+            <p>You'll learn far more by testing the limits of your own code than you will from
+                this website.</p>
+            <h3>Resources</h3>
+            <p>There are many resources available to you. The most important is the <a
+                    href="https://api.vexcode.cloud/v5/" target="_blank">VEX API</a> for C++.</p>
+            <p><a href="https://www.vexforum.com/" target="_blank" rel="noopener noreferrer">VEX
+                    Forum</a> is a great place to ask questions about anything VEX related.</p>
+            <p>I recommend <a href="https://cs50.harvard.edu/x/2022/" target="_blank" rel="noopener noreferrer">Harvard
+                    CS50</a> for learning more about programming. The <a href="https://youtu.be/YoXxevp1WRQ"
+                    target="_blank" rel="noopener noreferrer">Scratch</a>,
+                <a href="https://youtu.be/ZEQh45W_UDo" target="_blank" rel="noopener noreferrer">Python</a>, and
+                <a href="https://youtu.be/zYierUhIFNQ" target="_blank" rel="noopener noreferrer">C</a> lectures
+                are particularly useful.
+            </p>
+            <h3>What To Program With</h3>
+            <p>There are a variety of ways to program using the <a href="https://www.vexrobotics.com/vexcode"
+                    target="_blank">VEXCode</a> software suite.</p>
+            <table>
+                <colgroup>
+                    <col style="width: 12%;">
+                    <col style="width: 72%;">
+                    <col style="width: auto;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>IDE</th>
+                        <th>Details</th>
+                        <th>Languages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="vertical-align: top;">
+                        <td>
+                            <a href="https://codev5.vex.com/" target="_blank">VEXCode Online</a>
+                        </td>
+                        <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            This is the easiest and quickest to use, only requiring a web connection and light
+                            programming knowledge.</td>
+                        <td>Blocks, Python, C++</td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td><a href="https://www.vexrobotics.com/vexcode/pro-v5" target="_blank">VEXCode Pro</a>
+                        </td>
+                        <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            An offline editor for C++ programming with built in help menus like the online
+                            version.</td>
+                        <td>C++</td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td><a href="https://www.vexrobotics.com/vexcode/vscode-extension" target="_blank"
+                                rel="noopener noreferrer">VEXCode VSC</a></td>
+                        <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            A Visual Studio Code extension for C++ and Python programming.</td>
+                        <td>C++, Python</td>
+                    </tr>
+                    <tr style="vertical-align: top;">
+                        <td><a href="https://pros.cs.purdue.edu/" target="_blank" rel="noopener noreferrer">Purdue
+                                Pros</a></td>
+                        <td style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                            An independent C++ editor to VEXCode. This framework uses different syntax.</td>
+                        <td>C++</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>User Control</h1>
+            <p>In order to drive the robot, there first must be code bridging the gap between controller and
+                hardware. </p>
+            <p>User Control code boils down to this:</p>
+            <!-- usercontrol.png -->
+            <center><img src="static/usercontrol.png" alt="usercontrol.png"></center>
+
+
+
+            <h1>Competition Template</h1>
+            <p>The competition template is a good place to start.</p>
+            <p>When the competition organizers begin the autonomous and driver control period, the code must
+                be organized to know which <a
+                    href="https://www.futurelearn.com/info/courses/programming-102-think-like-a-computer-scientist/0/steps/53095"
+                    target="_blank">function</a> to run.</p>
+            <p>The importance of this template cannot be overlooked, which is why I <b>highly</b> recommend
+                testing
+                your code with a <a href="https://www.vexrobotics.com/276-2335.html" target="_blank">competition
+                    switch</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
