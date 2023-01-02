@@ -115,6 +115,33 @@
             color: #5F5F5F;
             margin: 0 0 10px 0;
         }
+
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Aligns items into a row */
+        .flex-item {
+            flex: 1 1 200px;
+            /* margin: 10px; */
+            /* padding: 10px; */
+            /* border: 1px solid #e8e8e8; */
+            /* border-radius: 5px; */
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        hr {
+            border: 1px solid #e8e8e8;
+        }
     </style>
 </head>
 
@@ -136,8 +163,8 @@
             <p>You'll learn far more by testing the limits of your own code than you will from
                 this website.</p>
             <h3>Resources</h3>
-            <p>There are many resources available to you. The most important is the <a
-                    href="https://api.vexcode.cloud/v5/" target="_blank">VEX API</a> for C++.</p>
+            <p>There are many resources available to you. The most important in C++ is the <a
+                    href="https://api.vexcode.cloud/v5/" target="_blank">VEX API</a>.</p>
             <p><a href="https://www.vexforum.com/" target="_blank" rel="noopener noreferrer">VEX
                     Forum</a> is a great place to ask questions about anything VEX related.</p>
             <p>I recommend <a href="https://cs50.harvard.edu/x/2022/" target="_blank" rel="noopener noreferrer">Harvard
@@ -146,6 +173,9 @@
                 <a href="https://youtu.be/ZEQh45W_UDo" target="_blank" rel="noopener noreferrer">Python</a>, and
                 <a href="https://youtu.be/zYierUhIFNQ" target="_blank" rel="noopener noreferrer">C</a> lectures
                 are particularly useful.
+            </p>
+            <a href="https://www.youtube.com/watch?v=DO2IsBFMgTg&list=PLvvcc7S26YEgjnEMSjmKd5pxswwWCwN1n&index=1"
+                target="_blank" rel="noopener noreferrer">Offical VEX Blocks Tutorial Series</a>
             </p>
             <h3>What To Program With</h3>
             <p>There are a variety of ways to program using the <a href="https://www.vexrobotics.com/vexcode"
@@ -197,16 +227,89 @@
                     </tr>
                 </tbody>
             </table>
+            <p>Since Purdue Pros uses different syntax, it will not be covered in this guide.</p>
             <h1>User Control</h1>
+            <ul>
+                <li></li>
+            </ul>
+            <hr>
+            <h3>Getting Started</h3>
+            <p>Open up your editor of choice, and create a blank project.</p>
+            <p>It's very important the project name is clear on what it does, otherwise, you may run the wrong
+                program
+                in competition.</p>
+            <p>But for now, call it <code>testUserControl</code>.</p>
+            <p>You should now see block, Python or C++ code in front of you.</p>
+            <p>If you are using C++, the most important file is <code>src > main.cpp</code></p>
+
+
+            <h3>Setting Up Motors</h3>
+            <p>Whenever possible, I recommend setting up motors in the <b>Devices</b> tab of the VEXCode.</p>
+            <!-- TOP -->
+            <!-- <p>To set up motors in the <b>Robot</b> tab of VEXCode:</p> -->
+            <ol>
+                <!-- <li>1. Click on the <code>Robot</code> tab in the top menu.</li> -->
+                <li>1. In the <code>Motors</code> section, click the "+" button to add a new motor.</li>
+                <li>2. In the <code>Name</code> field, enter a descriptive name for the motor (e.g. "LeftMotor",
+                    "RightMotor",
+                    "ArmMotor").</li>
+                <li>3. In the <code>Device</code> field, select the port that the motor is plugged into.</li>
+                <li>4. Click the <code>Add</code> button to save the motor.</li>
+                <li>5. Repeat the above steps for each motor you want to add.</li>
+            </ol>
+            <h3>Setting Up Controllers</h3>
+            <p>Similar to setting up motors, you can set up controllers in the <b>Robot</b> tab of VEXCode.</p>
+            <ol>
+                <!-- <li>1. Click on the <code>Robot</code> tab in the top menu.</li> -->
+                <li>1. In the <code>Controllers</code> section, click the "+" button to add a new controller.</li>
+                <li>2. In the <code>Name</code> field, enter a descriptive name for the controller (e.g.
+                    "Controller1",
+                    "Controller2").</li>
+                <li>3. In the <code>Type</code> field, select the type of controller you are using (e.g. VEX
+                    Gamepad,
+                    VEX Wireless
+                    Gamepad).</li>
+                <li>4. Click the "Add" button to save the controller.</li>
+            </ol>
+
+
+
+            <!-- BOTTOM -->
+            <h3>Putting It All Together</h3>
             <p>In order to drive the robot, there first must be code bridging the gap between controller and
                 hardware. </p>
             <p>User Control code boils down to this:</p>
+            <ol>
+                <li>1. Initialize</li>
+                <li>2. Get joystick information</li>
+                <li>3. Respond to joystick information</li>
+                <li>4. Respond to any buttons pushed</li>
+                <li>5. Repeat #2</li>
+            </ol>
+
             <!-- usercontrol.png -->
-            <center><img src="static/usercontrol.png" alt="usercontrol.png"></center>
+            <!-- <center><img src="static/usercontrol.png" alt="usercontrol.png" width="30%" height="auto"></center> -->
+            <!-- flexbox to put static/userControlPP.png, and 2 other photos into a ROW -->
+            <div class="flex-container">
+                <div class="flex-item">
+                    <img src="static/usercontrol.png" alt="userControlScratch.png" width="100%" height="auto">
+                </div>
+                <div class="flex-item">
+                    <img src="static/userControlScratch.png" alt="userControlCPP.png" width="100%" height="auto">
+                </div>
+                <div class="flex-item">
+                    <img src="static/userControlPython.png" alt="userControlPython.png" width="100%" height="auto">
+                </div>
+                <div class="flex-item">
+                    <img src="static/userControlCPP.png" alt="userControlBlocks.png" width="100%" height="auto">
+                </div>
+            </div>
+
 
 
 
             <h1>Competition Template</h1>
+            <hr>
             <p>The competition template is a good place to start.</p>
             <p>When the competition organizers begin the autonomous and driver control period, the code must
                 be organized to know which <a
