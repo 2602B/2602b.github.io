@@ -163,20 +163,8 @@
             <p>You'll learn far more by testing the limits of your own code than you will from
                 this website.</p>
             <h3>Resources</h3>
-            <!-- <p>There are many resources available to you. The most important in C++ is the <a
-                    href="https://api.vexcode.cloud/v5/" target="_blank">VEX API</a>.</p>
-            <p><a href="https://www.vexforum.com/" target="_blank" rel="noopener noreferrer">VEX
-                    Forum</a> is a great place to ask questions about anything VEX related.</p>
-            <p>I recommend <a href="https://cs50.harvard.edu/x/2022/" target="_blank" rel="noopener noreferrer">Harvard
-                    CS50</a> for learning more about programming. The <a href="https://youtu.be/YoXxevp1WRQ"
-                    target="_blank" rel="noopener noreferrer">Scratch</a>,
-                <a href="https://youtu.be/ZEQh45W_UDo" target="_blank" rel="noopener noreferrer">Python</a>, and
-                <a href="https://youtu.be/zYierUhIFNQ" target="_blank" rel="noopener noreferrer">C</a> lectures
-                are particularly useful.
-            </p>
-            <a href="https://www.youtube.com/watch?v=DO2IsBFMgTg&list=PLvvcc7S26YEgjnEMSjmKd5pxswwWCwN1n&index=1"
-                target="_blank" rel="noopener noreferrer">Offical VEX Blocks Tutorial Series</a>
-            </p> -->
+            <p>The <a href="https://api.vexcode.cloud/v5/" target="_blank" rel="noopener noreferrer">VEX C++ API</a> is
+                a great place to find information on VEX programming.</p>
             <h3>What Sensors Are There?</h3>
             <p>There are a variety of <a href="https://www.vexrobotics.com/v5/products/electronics/?q=__empty__&page=2"
                     target="_blank">sensors</a> VEX offers.</p>
@@ -267,7 +255,7 @@
                     href="https://api.vexcode.cloud/v5/class/classvex_1_1inertial" target="_blank"
                     rel="noopener noreferrer">other things.</a></p>
             <p>The most useful application is doing accurate turns in autonomous.</p>
-            <p>This is actually a really annoying task, since the inertial sensor records angles 0-360 degrees</p>
+            <p>This is actually a really annoying task, since the inertial sensor records angles 0-360 degrees.</p>
             <p>If we wanted turn from 45 to 315 degrees, the robot must first compute the distance turning to the left
                 and right and choose What direction is better.</p>
             <p>Additionally, since angles roll over from 360 to 0 degrees, simple subtraction will not cut it.</p>
@@ -282,7 +270,16 @@
             <p>This code would turn the robot 90 degrees, but would have bugs when turning to 270 degrees.</p>
             <p>For that reason the algorithms above need to be applied, but I'll leave that as an exercise to the
                 viewer.</p>
-
+            <p>Additionally, it is worthwhile to use a <a href="https://en.wikipedia.org/wiki/PID_controller"
+                    target="_blank" rel="noopener noreferrer">PID Controller</a> to do this.</p>
+            <h1>Distance Sensor</h1>
+            <hr>
+            <p>The distance sensor can get the distance away from an object.</p>
+            <p>Programming it is quite straight forward.</p>
+            <p>Here is an example:</p>
+            <img src="static/distanceCode.png" alt="" srcset="" width="250px" height="auto">
+            <p>In this code, the robot continuously drives forward until it is close enough to an object, in which case,
+                it would stop and grab the object.</p>
         </div>
     </div>
 </body>
